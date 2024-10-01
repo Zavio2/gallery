@@ -53,6 +53,11 @@ p {
   hyphens: auto;
   line-height: 1.5;
   text-indent: 1rem;
+  padding: .5rem;
+}
+
+img{
+  padding: .5rem;
 }
 
 small,
