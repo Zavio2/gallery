@@ -23,15 +23,12 @@
     :global(.light) .moon { fill: transparent; }
     :global(.light) .sun { fill: #1e1e2e; }
 </style>
-<script is:inline >
+<script is:inline>
     const theme = (() => {
         if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
             return localStorage.getItem('theme');
         }
-        if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-            return 'light';
-        }
-        return 'dark';
+        return 'dark'; // Modo oscuro por defecto
     })();
 
     if (theme === 'dark') {
@@ -52,4 +49,5 @@
 
     document.getElementById("themeToggle").addEventListener("click", handleToggleClick);
 </script>
+
 
