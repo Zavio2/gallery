@@ -291,6 +291,31 @@ li {
   transform: scale(0.8);
 }
 
+.btn-start{
+  text-align: center;
+  background: rgba(0, 0, 0, 0);
+  border: 2px solid var(--button);
+  border-radius: 8px;
+  color: var(--text);
+  font: 600 2rem var(--body);
+  padding: .5rem 1rem;
+  transition: background-color 0.4s, color 0.4s;
+  text-decoration: none;
+  transition: transform 0.1s;
+}
+
+.btn-start:hover{
+  background-color: var(--button);
+  color: var(--text-light);
+  cursor: pointer;
+}
+
+.btn-start:active{
+  background-color: var(--button);
+  color: var(--text-light);
+  transform: scale(0.8);
+}
+
 /* Skills */
 .skills {
   margin-top: 8px;
